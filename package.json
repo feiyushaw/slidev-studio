@@ -1,11 +1,11 @@
 {
-  "name": "slidev-addon-scientific",
+  "name": "slidev-studio",
   "version": "0.1.0",
   "private": true,
-  "description": "Theme-agnostic scientific and technical presentation components for Slidev, with Academic (Scholarly), Technical (HEP), and Business (Tahta) modes.",
-  "keywords": ["slidev", "slidev-addon", "scientific", "academic", "business", "plotly", "visualization"],
+  "description": "Academic, technical, and business presentation studio for Slidev.",
   "license": "MIT",
-  "engines": {"node": ">=20"},
+  "workspaces": ["packages/*"],
+  "engines": {"node": ">=24"},
   "scripts": {
     "dev:hep": "slidev slides-hep.md",
     "dev:scholarly": "slidev slides-scholarly.md",
@@ -14,17 +14,12 @@
     "export:scholarly": "slidev export slides-scholarly.md --output dist/scholarly.pdf",
     "export:business": "slidev export slides-business.md --output dist/business.pdf"
   },
-  "dependencies": {
-    "plotly.js-dist-min": "^3.1.0"
-  },
   "devDependencies": {
     "@slidev/cli": "^52.19.1",
+    "slidev-addon-scientific": "workspace:*",
     "slidev-theme-hep": "^0.1.1",
     "slidev-theme-scholarly": "^1.4.1",
     "slidev-theme-tahta": "^0.13.3",
     "vue": "^3.5.0"
-  },
-  "slidev": {
-    "colorSchema": "both"
   }
 }

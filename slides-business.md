@@ -24,7 +24,7 @@ kicker: Evidence
 title: Interactive engineering evidence
 ---
 
-<PlotlyGraph src="/convergence.json" :height="360" />
+<PlotlyGraph src="./convergence.json" :height="360" />
 
 ---
 layout: default

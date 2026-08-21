@@ -2,15 +2,17 @@
   "name": "slidev-addon-scientific",
   "version": "0.1.0",
   "private": true,
-  "description": "Theme-agnostic scientific components for Slidev, designed for HEP and Scholarly themes.",
-  "keywords": ["slidev", "slidev-addon", "scientific", "academic", "plotly", "visualization"],
+  "description": "Theme-agnostic scientific and technical presentation components for Slidev, with Academic (Scholarly), Technical (HEP), and Business (Tahta) modes.",
+  "keywords": ["slidev", "slidev-addon", "scientific", "academic", "business", "plotly", "visualization"],
   "license": "MIT",
   "engines": {"node": ">=20"},
   "scripts": {
     "dev:hep": "slidev examples/hep/slides.md",
     "dev:scholarly": "slidev examples/scholarly/slides.md",
+    "dev:business": "slidev examples/business/slides.md",
     "export:hep": "slidev export examples/hep/slides.md --output dist/hep.pdf",
-    "export:scholarly": "slidev export examples/scholarly/slides.md --output dist/scholarly.pdf"
+    "export:scholarly": "slidev export examples/scholarly/slides.md --output dist/scholarly.pdf",
+    "export:business": "slidev export examples/business/slides.md --output dist/business.pdf"
   },
   "dependencies": {
     "plotly.js-dist-min": "^3.1.0"
@@ -19,6 +21,7 @@
     "@slidev/cli": "^52.19.1",
     "slidev-theme-hep": "^0.1.1",
     "slidev-theme-scholarly": "^1.4.1",
+    "slidev-theme-tahta": "^0.13.3",
     "vue": "^3.5.0"
   },
   "slidev": {

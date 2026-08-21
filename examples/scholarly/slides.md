@@ -1,7 +1,7 @@
 ---
 theme: scholarly
 addons:
-  - ../../
+  - .
 title: Scientific Slidev · Scholarly
 authors:
   - name: Researcher

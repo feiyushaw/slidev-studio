@@ -1,7 +1,7 @@
 ---
 theme: hep
 addons:
-  - ../..
+  - ../../
 title: Scientific Slidev · HEP
 meeting: Scientific Presentation Demo
 preTitle: Scientific Slidev

@@ -1,7 +1,7 @@
 ---
 theme: hep
 addons:
-  - ./
+  - slidev-addon-scientific
 title: Slidev Studio · HEP
 meeting: Slidev Studio Demo
 preTitle: Slidev Studio

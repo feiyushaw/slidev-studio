@@ -34,7 +34,7 @@ layout: pageBar
 
 # Interactive trajectory visualization
 
-<TrajectoryViewer src="/trajectory.json" />
+<TrajectoryViewer src="./trajectory.json" />
 
 ---
 layout: pageBar
@@ -42,4 +42,4 @@ layout: pageBar
 
 # Python → Plotly → Slidev
 
-<PlotlyGraph src="/convergence.json" :height="360" />
+<PlotlyGraph src="./convergence.json" :height="360" />

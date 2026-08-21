@@ -1,7 +1,7 @@
 ---
 theme: tahta
 addons:
-  - ../../
+  - .
 themeConfig:
   variant: boardroom
 layout: cover

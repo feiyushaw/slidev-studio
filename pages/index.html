@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Slidev Studio</title>
+  <meta name="description" content="Academic, technical, and business presentation modes for Slidev." />
+  <style>
+    :root { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color-scheme: light dark; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: #0d1117; color: #f0f3f6; }
+    main { width: min(1120px, calc(100% - 40px)); margin: 0 auto; padding: 72px 0 56px; }
+    .eyebrow { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; opacity: .55; }
+    h1 { margin: 12px 0 14px; font-size: clamp(42px, 7vw, 76px); line-height: .96; letter-spacing: -.055em; }
+    .lead { max-width: 720px; margin: 0; font-size: 18px; line-height: 1.65; opacity: .72; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 50px; }
+    .card { min-height: 330px; padding: 26px; border: 1px solid rgba(255,255,255,.12); border-radius: 20px; color: inherit; text-decoration: none; display: flex; flex-direction: column; justify-content: space-between; transition: transform .18s ease, border-color .18s ease, background .18s ease; }
+    .card:hover { transform: translateY(-4px); border-color: rgba(255,255,255,.32); }
+    .card.academic { background: linear-gradient(155deg, rgba(33,72,130,.32), rgba(13,17,23,.65)); }
+    .card.technical { background: linear-gradient(155deg, rgba(89,63,138,.28), rgba(13,17,23,.65)); }
+    .card.business { background: linear-gradient(155deg, rgba(38,84,105,.34), rgba(13,17,23,.65)); }
+    .tag { display: inline-flex; align-items: center; gap: 7px; width: fit-content; padding: 6px 10px; border-radius: 999px; border: 1px solid rgba(255,255,255,.14); font-size: 12px; opacity: .8; }
+    .card h2 { margin: 16px 0 8px; font-size: 30px; letter-spacing: -.035em; }
+    .card p { margin: 0; max-width: 28ch; line-height: 1.55; opacity: .66; }
+    .open { display: flex; align-items: center; justify-content: space-between; padding-top: 30px; font-size: 14px; }
+    footer { margin-top: 46px; display: flex; gap: 20px; flex-wrap: wrap; font-size: 13px; opacity: .5; }
+    footer a { color: inherit; }
+    @media (max-width: 820px) { .grid { grid-template-columns: 1fr; } .card { min-height: 240px; } main { padding-top: 44px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">Presentation Gallery</div>
+    <h1>Slidev Studio</h1>
+    <p class="lead">Three presentation modes, one reusable component layer. Open any deck below and use the floating ◈ control in the upper-right corner to switch between themes without returning to this page.</p>
+
+    <section class="grid">
+      <a class="card academic" href="./scholarly/">
+        <div>
+          <span class="tag">Academic</span>
+          <h2>Scholarly</h2>
+          <p>For papers, defenses, conferences, equations, citations, methodology, and formal research talks.</p>
+        </div>
+        <div class="open"><span>Open presentation</span><span>↗</span></div>
+      </a>
+
+      <a class="card technical" href="./hep/">
+        <div>
+          <span class="tag">Technical</span>
+          <h2>HEP</h2>
+          <p>For algorithm reviews, engineering discussions, experiment results, trajectories, and interactive technical visualization.</p>
+        </div>
+        <div class="open"><span>Open presentation</span><span>↗</span></div>
+      </a>
+
+      <a class="card business" href="./business/">
+        <div>
+          <span class="tag">Business</span>
+          <h2>Tahta</h2>
+          <p>For internal reviews, executive summaries, strategy, roadmap, metrics, product, and enterprise presentations.</p>
+        </div>
+        <div class="open"><span>Open presentation</span><span>↗</span></div>
+      </a>
+    </section>
+
+    <footer>
+      <span>Shared: EquationBlock · ScientificFigure · PlotlyGraph · TrajectoryViewer · OptimizationViewer</span>
+      <a href="https://github.com/feiyushaw/slidev-studio">GitHub</a>
+    </footer>
+  </main>
+</body>
+</html>

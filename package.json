@@ -1,0 +1,25 @@
+{
+  "name": "slidev-studio",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Academic, technical, and business presentation studio for Slidev.",
+  "license": "MIT",
+  "workspaces": ["packages/*"],
+  "engines": {"node": ">=24"},
+  "scripts": {
+    "dev:hep": "slidev slides-hep.md",
+    "dev:scholarly": "slidev slides-scholarly.md",
+    "dev:business": "slidev slides-business.md",
+    "export:hep": "slidev export slides-hep.md --output dist/hep.pdf",
+    "export:scholarly": "slidev export slides-scholarly.md --output dist/scholarly.pdf",
+    "export:business": "slidev export slides-business.md --output dist/business.pdf"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^52.19.1",
+    "slidev-addon-scientific": "*",
+    "slidev-theme-hep": "^0.1.1",
+    "slidev-theme-scholarly": "^1.4.1",
+    "slidev-theme-tahta": "^0.13.3",
+    "vue": "^3.5.0"
+  }
+}

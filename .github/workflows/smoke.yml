@@ -1,0 +1,35 @@
+name: smoke
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [feat/scientific-addon-v0]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          package-manager-cache: false
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Scholarly demo
+        run: npx slidev build slides-scholarly.md --out dist/scholarly
+
+      - name: Build HEP demo
+        run: npx slidev build slides-hep.md --out dist/hep
+
+      - name: Lint Tahta business demo
+        run: npx tahta-lint slides-business.md
+
+      - name: Build Tahta business demo
+        run: npx slidev build slides-business.md --out dist/business

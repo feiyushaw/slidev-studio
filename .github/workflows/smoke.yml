@@ -12,17 +12,23 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: npm
+          node-version: 24
+
       - name: Install dependencies
         run: npm install
+
       - name: Build Scholarly demo
         run: npx slidev build examples/scholarly/slides.md --out dist/scholarly
+
       - name: Build HEP demo
         run: npx slidev build examples/hep/slides.md --out dist/hep
+
       - name: Lint Tahta business demo
         run: npx tahta-lint examples/business/slides.md
+
       - name: Build Tahta business demo
         run: npx slidev build examples/business/slides.md --out dist/business

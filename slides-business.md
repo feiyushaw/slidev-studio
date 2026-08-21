@@ -1,7 +1,7 @@
 ---
 theme: tahta
 addons:
-  - ./
+  - slidev-addon-scientific
 themeConfig:
   variant: boardroom
 layout: cover

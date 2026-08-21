@@ -21,12 +21,12 @@ stats:
 ---
 layout: statement
 kicker: Decision
- title: Keep the business story simple; open the technical depth only when it changes the decision.
+title: Keep the business story simple; open the technical depth only when it changes the decision.
 ---
 ---
 layout: default
 kicker: Evidence
- title: Interactive engineering evidence remains available
+title: Interactive engineering evidence remains available
 ---
 
 <PlotlyGraph src="/plotly-demo.json" :height="360" />
@@ -34,7 +34,7 @@ kicker: Evidence
 ---
 layout: default
 kicker: Technical appendix
- title: Scientific components work without changing the business theme
+title: Scientific components work without changing the business theme
 aside: "technical deep dive"
 ---
 

@@ -29,7 +29,7 @@ kicker: Evidence
 title: Interactive engineering evidence remains available
 ---
 
-<PlotlyGraph src="/plotly-demo.json" :height="360" />
+<PlotlyGraph src="/convergence.json" :height="360" />
 
 ---
 layout: default

@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@slidev/cli": "^52.19.1",
-    "slidev-addon-scientific": "workspace:*",
+    "slidev-addon-scientific": "*",
     "slidev-theme-hep": "^0.1.1",
     "slidev-theme-scholarly": "^1.4.1",
     "slidev-theme-tahta": "^0.13.3",
